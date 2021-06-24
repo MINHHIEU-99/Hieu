@@ -1,0 +1,5 @@
+    pil_image = Image.fromarray(img_gray)
+    buff = io.BytesIO()
+    pil_image.save(buff, format = "PNG")
+    img_str = base64.b64encode(buff.getvalue())
+    img_nhap = main2()
